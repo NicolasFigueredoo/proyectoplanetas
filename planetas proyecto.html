@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>PESO PLANETARIO</title>
+        <style>
+        body{
+            background-color: lightseagreen;
+            color: black;
+        }
+        #seccion1
+        {
+            font-size: 50px;
+            text-align: center;
+        }
+        #seccion2
+        {
+            font-size: 100px;
+            text-align: center;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <section id="seccion1">
+
+            <h1>EXCELENTE RESULTADO!</h1>
+        </section>
+        <section id="seccion2">
+            <img src="https://www.infofueguina.com/u/fotografias/m/2015/10/16/f800x450-16886_68332_5050.jpg">
+        </section>
+       
+        <script>
+    var usuario = prompt("Cuanto pesas?");
+    var planeta = prompt("Que planeta eliges? 1 jupiter 2 marte");
+    var peso = parseInt(usuario);
+    var nombre= "";
+    var tierra = 9.8;
+    var jupiter = 4.7;
+    var marte = 24.8;
+    var peso_final;
+
+if(planeta == 1)
+{
+
+           peso_final = peso * tierra / jupiter
+           nombre = "JUPITER"; 
+}
+
+
+else if(planeta == 2)
+{
+    peso_final = peso * tierra / marte
+    nombre = "MARTES";
+
+
+}
+
+else
+{
+    peso_final = 10000;
+nombre = "CRYPTON";
+  
+}
+
+
+
+
+
+
+
+    peso_final = parseInt(peso_final);
+document.write("TU PESO EN " + nombre + " ES  " + peso_final + " KG")
+        </script>
+
+    </body>
+    
+</html>
